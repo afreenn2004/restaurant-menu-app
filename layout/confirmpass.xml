@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"/>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset your password here"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a new password and confirm it:"
+        android:layout_below="@id/textview"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="16dp"/>
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="304dp"
+        android:layout_below="@id/textview1"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="347dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/imageview"
+        android:hint="New Password"
+        android:background="@drawable/edittext"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="347dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/editText"
+        android:hint="Confirm Password"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/edittext"
+        android:layout_marginLeft="16dp"/>
+
+    <Button
+        android:id="@+id/btnResetPassword"
+        android:layout_width="289dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/editText1"
+        android:layout_marginTop="30sp"
+        android:layout_centerHorizontal="true"
+        android:text="Reset Password"
+        android:backgroundTint="@color/red"/>
+
+</RelativeLayout>

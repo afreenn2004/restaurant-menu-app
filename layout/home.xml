@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageview"
+        android:text="Select a meal type"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"/>
+    
+    <Button
+        android:id="@+id/mainCoursebtn"
+        android:layout_width="347dp"
+        android:layout_height="128dp"
+        android:text="Main Course"
+        android:textSize="20dp"
+        android:layout_below="@id/textview"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/appetizer"
+        android:layout_width="347dp"
+        android:layout_height="128dp"
+        android:text="Appetizer"
+        android:textSize="20dp"
+        android:layout_below="@id/mainCoursebtn"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/dessertbtn"
+        android:layout_width="347dp"
+        android:layout_height="128dp"
+        android:textSize="20dp"
+        android:text="Dessert"
+        android:layout_below="@id/appetizer"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/drinks"
+        android:layout_width="347dp"
+        android:layout_height="128dp"
+        android:textSize="20dp"
+        android:text="Drinks"
+        android:layout_below="@id/dessertbtn"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo__1_"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="406dp"
+        android:layout_height="375dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_restaurant_foreground" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="339dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext"
+        android:text="Log In"
+        android:textSize="20dp"
+        android:layout_below="@id/imageview1"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="339dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext"
+        android:text="Register"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btn1"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="339dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext"
+        android:text="Explore Menu"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btn2"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

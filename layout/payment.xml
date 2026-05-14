@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="60dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a payment method"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/imageview"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user"
+        android:layout_below="@id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/userTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name on the Card"
+        android:layout_below="@id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/user"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="60dp"
+        android:textSize="17sp"
+        android:textColor="@color/red" />
+
+    <EditText
+        android:id="@+id/cardName"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userTv"
+        android:hint="Name On Card"
+        android:inputType="text"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/IvCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/credit_card"
+        android:layout_below="@id/cardName"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Card Number"
+        android:layout_toRightOf="@id/IvCard"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/cardName"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="17sp"
+        android:textColor="@color/red"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview"
+        android:layout_marginLeft="-54dp"
+        android:layout_marginTop="-464dp"
+        android:layout_toRightOf="@id/cardEditText"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/cardEditText"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:hint="Card Number"
+        android:inputType="text"
+        android:layout_below="@id/IvCard"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardEditText"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/baseline_calendar_today_24" />
+
+    <TextView
+        android:id="@+id/expiryDate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Expiry Date"
+        android:textColor="@color/red"
+        android:layout_below="@id/cardEditText"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="62dp"
+        android:textSize="17sp"/>
+
+    <LinearLayout
+        android:id="@+id/date"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-340dp"
+        android:layout_below="@id/expiryDate">
+
+        <EditText
+            android:id="@+id/editTextExpDateMonth"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="MM"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/editTextExpDateYear"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="YYYY"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cvcTv"
+        android:layout_width="340dp"
+        android:layout_height="29dp"
+        android:layout_below="@id/date"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="46dp"
+        android:textColor="@color/red"
+        android:textSize="17sp"
+        android:text="CVC" />
+
+    <EditText
+        android:id="@+id/cvcEtext"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvcTv"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:hint="XXX" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="289dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/cvcEtext"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="@color/red"
+        android:text="Complete" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottomnav"/>
+
+
+</RelativeLayout>

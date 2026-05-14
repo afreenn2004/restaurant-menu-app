@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edittext"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/foodImageView4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/foodNameTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Item"
+        android:layout_below="@id/foodImageView4"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/foodPriceTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodImageView4"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/foodNameTextView4"
+        android:layout_marginLeft="50dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="$0"
+        />
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="81dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/foodNameTextView4"
+        android:layout_toRightOf="@id/foodNameTextView4"
+        android:layout_marginLeft="-16dp"
+        android:text="Add  +"
+        android:textSize="6dp" />
+
+</RelativeLayout>

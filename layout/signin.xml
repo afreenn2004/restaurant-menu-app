@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/backarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"
+        android:layout_marginTop="26sp"
+        android:layout_marginLeft="16dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good food awaits. Log in and indulge!"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="26sp"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="342dp"
+        android:layout_height="288dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/ic_login_foreground"/>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="@color/red"
+        android:textSize="28dp"
+        android:layout_marginStart="30sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageview"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        android:layout_width="342dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/textview"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="20dp"
+        android:hint="Email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:layout_width="342dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/username"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="20dp"
+        android:hint="Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:layout_below="@id/password"
+        android:onClick="forgotPassword"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="250dp"/>
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="342dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:text="Log In"
+        android:backgroundTint="@color/red"
+        android:layout_marginStart="30sp"
+        android:layout_below="@id/textview1"/>
+
+    <TextView
+        android:id="@+id/accTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:layout_marginTop="16sp"
+        android:layout_marginLeft="100dp"
+        android:textSize="16dp"
+        android:layout_below="@id/loginbtn"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/accTv"
+        android:layout_below="@id/loginbtn"
+        android:layout_marginTop="16sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/red"
+        android:textSize="16dp"
+        android:text="Register"/>
+
+</RelativeLayout>

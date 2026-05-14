@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <!--COFFEE-->
+        <RelativeLayout
+            android:id="@+id/coffeeLayout"
+            android:layout_width="124dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="22dp">
+
+            <ImageView
+                android:id="@+id/coffeeImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_coffee_foreground" />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="108dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/coffeeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="100dp"
+        android:background="@mipmap/ic_rectangle58_foreground">
+
+        <TextView
+            android:id="@+id/coffeeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Coffee"
+            android:layout_marginStart="5dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/coffeePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$3"
+            android:layout_toRightOf="@id/coffeeTv"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="30dp"/>
+
+
+        <Button
+            android:layout_width="71dp"
+            android:layout_height="31dp"
+            android:layout_below="@id/coffeeTv"
+            android:layout_centerHorizontal="true"
+            android:text="Add  +"
+            android:textSize="6dp" />
+    </RelativeLayout>
+
+        <!--TEA-->
+        <RelativeLayout
+            android:id="@+id/teaLayout"
+            android:layout_width="122dp"
+            android:layout_height="86dp"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@id/coffeeLayout"
+            android:layout_marginTop="22dp">
+
+            <ImageView
+                android:id="@+id/teaImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_tea_foreground" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="108dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/teaLayout"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@id/coffeeLayout"
+            android:background="@mipmap/ic_rectangle50_foreground">
+
+            <TextView
+                android:id="@+id/teaTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Tea"
+                android:layout_marginStart="4dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$2"
+                android:layout_toRightOf="@id/teaTv"
+                android:layout_marginTop="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="56dp"/>
+
+            <Button
+                android:layout_width="71dp"
+                android:layout_height="31dp"
+                android:layout_below="@id/teaTv"
+                android:layout_centerHorizontal="true"
+                android:text="Add  +"
+                android:textSize="6dp" />
+        </RelativeLayout>
+
+        <!--SODA-->
+        <RelativeLayout
+            android:id="@+id/sodaLayout"
+            android:layout_width="122dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@id/teaLayout"
+            android:layout_marginTop="22dp">
+
+            <ImageView
+                android:id="@+id/sodaImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_soda_foreground" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="108dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/sodaLayout"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@id/teaLayout"
+            android:background="@mipmap/ic_rectangle50_foreground">
+
+            <TextView
+                android:id="@+id/sodaTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Soda"
+                android:layout_marginStart="4dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$2"
+                android:layout_toRightOf="@id/sodaTv"
+                android:layout_marginTop="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="46dp"/>
+
+            <Button
+                android:layout_width="71dp"
+                android:layout_height="31dp"
+                android:layout_below="@id/sodaTv"
+                android:layout_centerHorizontal="true"
+                android:text="Add  +"
+                android:textSize="6dp" />
+        </RelativeLayout>
+
+        <!--LEMONADE-->
+        <RelativeLayout
+            android:id="@+id/lemonadeLayout"
+            android:layout_width="150dp"
+            android:layout_height="86dp"
+            android:layout_toRightOf="@id/sodaLayout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="22dp">
+
+            <ImageView
+                android:id="@+id/lemonadeImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_lemonade_foreground" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="108dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/lemonadeLayout"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@id/sodaLayout"
+            android:background="@mipmap/ic_rectangle50_foreground">
+
+            <TextView
+                android:id="@+id/lemonadeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Lemonade"
+                android:layout_marginStart="4dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$3"
+                android:layout_toRightOf="@id/lemonadeTv"
+                android:layout_marginTop="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp"/>
+
+            <Button
+                android:layout_width="71dp"
+                android:layout_height="31dp"
+                android:layout_below="@id/lemonadeTv"
+                android:layout_centerHorizontal="true"
+                android:text="Add  +"
+                android:textSize="6dp" />
+        </RelativeLayout>
+
+        <!--ICED TEA-->
+        <RelativeLayout
+            android:id="@+id/icedTeaLayout"
+            android:layout_width="100dp"
+            android:layout_height="86dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/lemonadeLayout"
+            android:layout_marginTop="22dp">
+
+            <ImageView
+                android:id="@+id/icedTeaImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_icedtea_foreground" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="108dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/icedTeaLayout"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@id/lemonadeLayout"
+            android:background="@mipmap/ic_rectangle50_foreground">
+
+            <TextView
+                android:id="@+id/icedTeaTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Iced Tea"
+                android:layout_marginStart="4dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$3"
+                android:layout_toRightOf="@id/icedTeaTv"
+                android:layout_marginTop="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="20dp"/>
+
+            <Button
+                android:layout_width="71dp"
+                android:layout_height="31dp"
+                android:layout_below="@id/icedTeaTv"
+                android:layout_centerHorizontal="true"
+                android:text="Add  +"
+                android:textSize="6dp" />
+        </RelativeLayout>
+
+        <!--HOT CHOCOLATE-->
+        <RelativeLayout
+            android:id="@+id/hotChocoLayout"
+            android:layout_width="122dp"
+            android:layout_height="86dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/icedTeaLayout"
+            android:layout_marginTop="22dp">
+
+            <ImageView
+                android:id="@+id/hotChocoImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_hotchocolate_foreground" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="108dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/hotChocoLayout"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@id/icedTeaLayout"
+            android:background="@mipmap/ic_rectangle50_foreground">
+
+            <TextView
+                android:id="@+id/hotChocoTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Hot Chocolate"
+                android:layout_marginStart="4dp"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$4"
+                android:layout_toRightOf="@id/hotChocoTv"
+                android:layout_marginTop="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp"/>
+
+            <Button
+                android:layout_width="71dp"
+                android:layout_height="31dp"
+                android:layout_below="@id/hotChocoTv"
+                android:layout_centerHorizontal="true"
+                android:text="Add  +"
+                android:textSize="6dp" />
+        </RelativeLayout>
+
+            <!--WATER-->
+            <RelativeLayout
+                android:id="@+id/waterLayout"
+                android:layout_width="105dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="9dp"
+                android:layout_below="@id/coffeeLayout"
+                android:layout_marginTop="60dp">
+                <ImageView
+                    android:id="@+id/waterImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_water_foreground"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="108dp"
+                android:layout_height="65dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="280dp"
+                android:layout_below="@id/waterLayout"
+                android:layout_alignParentLeft="true"
+                android:background="@mipmap/ic_rectangle50_foreground">
+
+                <TextView
+                    android:id="@+id/waterTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Water"
+                    android:layout_marginStart="4dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$1"
+                    android:layout_toRightOf="@id/waterTv"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="36dp"/>
+
+                <Button
+                    android:layout_width="71dp"
+                    android:layout_height="31dp"
+                    android:layout_below="@id/waterTv"
+                    android:layout_centerHorizontal="true"
+                    android:text="Add  +"
+                    android:textSize="6dp" />
+            </RelativeLayout>
+
+        <!--FRUIT JUICE-->
+        <RelativeLayout
+            android:id="@+id/juiceLayout"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/teaLayout"
+            android:layout_toRightOf="@id/waterLayout"
+            android:layout_marginTop="67dp">
+            <ImageView
+                android:id="@+id/juiceImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_juice_foreground"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="108dp"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="280dp"
+            android:layout_toRightOf="@id/waterLayout"
+            android:layout_below="@id/juiceLayout"
+            android:background="@mipmap/ic_rectangle50_foreground">
+
+            <TextView
+                android:id="@+id/juiceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Fruit Juice"
+                android:layout_marginStart="4dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$4"
+                android:layout_toRightOf="@id/juiceTv"
+                android:layout_marginTop="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp"/>
+
+            <Button
+                android:layout_width="71dp"
+                android:layout_height="31dp"
+                android:layout_below="@id/juiceTv"
+                android:layout_centerHorizontal="true"
+                android:text="Add  +"
+                android:textSize="6dp" />
+        </RelativeLayout>
+
+        <!--Mojito-->
+        <RelativeLayout
+            android:id="@+id/mojitoLayout"
+            android:layout_width="122dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="26dp"
+            android:layout_below="@id/sodaLayout"
+            android:layout_toRightOf="@id/juiceLayout"
+            android:layout_marginTop="90dp">
+            <ImageView
+                android:id="@+id/mojitoImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_mojito_foreground"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="108dp"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="280dp"
+            android:layout_toRightOf="@id/juiceLayout"
+            android:layout_below="@id/mojitoLayout"
+            android:background="@mipmap/ic_rectangle50_foreground">
+
+            <TextView
+                android:id="@+id/mojitoTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Mojito"
+                android:layout_marginStart="4dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$5"
+                android:layout_toRightOf="@id/mojitoTv"
+                android:layout_marginTop="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="30dp"/>
+
+            <Button
+                android:layout_width="71dp"
+                android:layout_height="31dp"
+                android:layout_below="@id/mojitoTv"
+                android:layout_centerHorizontal="true"
+                android:text="Add  +"
+                android:textSize="6dp" />
+        </RelativeLayout>
+
+        <!--Lassi-->
+        <RelativeLayout
+            android:id="@+id/lassiLayout"
+            android:layout_width="104dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/lemonadeLayout"
+            android:layout_toRightOf="@id/mojitoLayout"
+            android:layout_marginTop="67dp">
+            <ImageView
+                android:id="@+id/lassiImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_lassi_foreground"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="108dp"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="280dp"
+            android:layout_toRightOf="@id/mojitoLayout"
+            android:layout_below="@id/lassiLayout"
+            android:background="@mipmap/ic_rectangle50_foreground">
+
+            <TextView
+                android:id="@+id/lassiTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Lassi"
+                android:layout_marginStart="4dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$4"
+                android:layout_toRightOf="@id/lassiTv"
+                android:layout_marginTop="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="36dp"/>
+
+            <Button
+                android:layout_width="71dp"
+                android:layout_height="31dp"
+                android:layout_below="@id/lassiTv"
+                android:layout_centerHorizontal="true"
+                android:text="Add  +"
+                android:textSize="6dp" />
+        </RelativeLayout>
+
+        <!--MARGARITA-->
+        <RelativeLayout
+            android:id="@+id/margaritaLayout"
+            android:layout_width="108dp"
+            android:layout_height="98dp"
+            android:layout_marginLeft="46dp"
+            android:layout_below="@id/lemonadeLayout"
+            android:layout_toRightOf="@id/lassiLayout"
+            android:layout_marginTop="82dp">
+            <ImageView
+                android:id="@+id/margaritaImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_margarita_foreground"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="108dp"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="280dp"
+            android:layout_toRightOf="@id/lassiLayout"
+            android:layout_below="@id/margaritaLayout"
+            android:background="@mipmap/ic_rectangle50_foreground">
+
+            <TextView
+                android:id="@+id/margaritaTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Green Tea"
+                android:layout_marginStart="4dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$2"
+                android:layout_toRightOf="@id/margaritaTv"
+                android:layout_marginTop="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="10dp"/>
+
+            <Button
+                android:layout_width="71dp"
+                android:layout_height="31dp"
+                android:layout_below="@id/margaritaTv"
+                android:layout_centerHorizontal="true"
+                android:text="Add  +"
+                android:textSize="6dp" />
+        </RelativeLayout>
+
+        <!--GAHWA-->
+        <RelativeLayout
+            android:id="@+id/gahwaLayout"
+            android:layout_width="102dp"
+            android:layout_height="136dp"
+            android:layout_marginLeft="23dp"
+            android:layout_below="@id/hotChocoLayout"
+            android:layout_toRightOf="@id/margaritaLayout"
+            android:layout_marginTop="62dp">
+            <ImageView
+                android:id="@+id/gahwaImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_gahwa_foreground"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="108dp"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="280dp"
+            android:layout_toRightOf="@id/margaritaLayout"
+            android:layout_below="@id/gahwaLayout"
+            android:background="@mipmap/ic_rectangle50_foreground">
+
+            <TextView
+                android:id="@+id/gahwaTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Gahwa"
+                android:layout_marginStart="4dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$2"
+                android:layout_toRightOf="@id/gahwaTv"
+                android:layout_marginTop="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="30dp"/>
+
+            <Button
+                android:layout_width="71dp"
+                android:layout_height="31dp"
+                android:layout_below="@id/gahwaTv"
+                android:layout_centerHorizontal="true"
+                android:text="Add  +"
+                android:textSize="6dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</HorizontalScrollView>
