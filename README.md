@@ -41,7 +41,21 @@ The application uses Firebase as its backend service:
 
 ---
 
+## 🎥 Demo Video
+
+Watch the complete application demo here:
+
+Tap 'N Eat Demo Video: (https://youtu.be/Iu8MWDikphU)
+
+---
+
 ## 👩‍💻 Author
 
 Afreen Ajaz
+
+---
+
+## 📌 Note
+
+This project was developed as part of an academic project and showcases Android application development, Firebase integration, UI/UX implementation, and mobile application architecture.
 
